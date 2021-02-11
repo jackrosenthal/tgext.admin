@@ -6,10 +6,7 @@
 
 <body py:block="body" py:strip="True">
 <?python
-PAGER_ARGS = tmpl_context.make_pager_args(link=mount_point+'/',
-                                          page_link_template='<li><a%s>%s</a></li>',
-                                          page_plain_template='<li%s><span>%s</span></li>',
-                                          curpage_attr={'class': 'active'})
+PAGER_ARGS = tmpl_context.make_pager_args(link=mount_point+'/', page_link_template='<li><a%s>%s</a></li>', page_plain_template='<li%s><span>%s</span></li>', curpage_attr={'class': 'active'})
 ?>
 
   <div class="row" py:with="leftmenu=getattr(tmpl_context, 'menu_items', False)">
