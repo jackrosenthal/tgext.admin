@@ -20,10 +20,9 @@ test_requirements = [
   'genshi'
 ]
 
-setup(name='tgext.admin',
+setup(name='tgext.admin-jmr',
       version=version,
       description="Admin Controller add-on for basic TG identity model.",
-      long_description=README,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
@@ -40,7 +39,7 @@ setup(name='tgext.admin',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'tgext.crud >= 0.8.2',
+          'tgext.crud-jmr >= 0.8.2',
           # -*- Extra requirements: -*-
       ],
       test_suite='nose.collector',
